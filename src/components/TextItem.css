@@ -1,0 +1,45 @@
+.text-item {
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+}
+
+.text-item:hover {
+    background: #e3fafc;
+}
+
+.text-item:hover .remove {
+    opacity: 1;
+}
+
+.text-item + .text-item {
+    border-top: 1px solid #f1f3f5;
+}
+
+.remove {
+    margin-right: 1rem;
+    color: #e64980;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.text-content {
+    flex: 1;
+    word-break: break-all;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #adb6bd;
+}
+
+.check-mark {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    color: #3bc9db;
+    font-weight: 800;
+}
