@@ -67,7 +67,7 @@ class App extends Component {
 
     render() {
         const fetchText = async () => {
-            const response = await axios.get('http://localhost:8888/text')
+            const response = await axios.get('http://localhost/text')
             console.log(response)
         }
         fetchText()
